@@ -8,5 +8,3 @@ Bypasses Discord's NSFW age gate.
 
 -  `git clone https://github.com/slow/nsfw-gate-bypass`
 
-# Support
-- eternal#1000
