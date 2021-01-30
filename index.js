@@ -12,7 +12,7 @@ module.exports = class NSFWBypass extends Plugin {
    }
 
    pluginWillUnload() {
-      let user = getCurrentUser()
+      let user = getCurrentUser();
       user.nsfwAllowed = user._nsfwAllowed;
    }
-}
+};
