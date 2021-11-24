@@ -2,7 +2,7 @@ const { Plugin } = require('powercord/entities');
 const { waitFor } = require('powercord/util');
 const { getModule } = require('powercord/webpack');
 const { inject, uninject } = require('powercord/injector');
-const UserModule = getModule(['getNullableCurrentUser'], false);
+const UserModule = getModule(['getCurrentUser', 'getUser'], false);
 
 module.exports = class NSFWBypass extends Plugin {
    async startPlugin() {
