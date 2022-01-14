@@ -6,7 +6,7 @@ const UserModule = getModule(['getCurrentUser', 'getUser'], false);
 
 module.exports = class NSFWBypass extends Plugin {
    async startPlugin() {
-      await waitFor('.container-3w7J-x');
+      await waitFor('.container-1NXEtd');
       inject('nsfw-gate-bypass', UserModule, 'getCurrentUser', (_, res) => {
          if (res.nsfwAllowed == false) res.nsfwAllowed = true;
          return res;
