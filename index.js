@@ -10,7 +10,7 @@ module.exports = class NSFWBypass extends Plugin {
    async startPlugin() {
       await waitFor(`.${container}`);
       inject('nsfw-gate-bypass', Users, 'getCurrentUser', (_, res) => {
-         if (res?.nsfwAllowed === false) {
+         if (res) {
             res.nsfwAllowed = true;
          }
 
